@@ -8,7 +8,8 @@
     "build": "cross-env INIT_CWD=$PWD next build && cross-env NODE_OPTIONS='--experimental-json-modules' node ./scripts/postbuild.mjs",
     "serve": "next start",
     "analyze": "cross-env ANALYZE=true next build",
-    "lint": "next lint --fix --dir pages --dir app --dir components --dir lib --dir layouts --dir scripts"
+    "lint": "next lint --fix --dir pages --dir app --dir components --dir lib --dir layouts --dir scripts",
+    "export": "next build && next export && next-image-export-optimizer"
   },
   "dependencies": {
     "@next/bundle-analyzer": "13.4.12",
@@ -22,6 +23,7 @@
     "image-size": "1.0.0",
     "next": "13.4.12",
     "next-contentlayer": "0.3.4",
+    "next-image-export-optimizer": "^1.8.3",
     "next-themes": "^0.2.1",
     "pliny": "0.1.1",
     "postcss": "^8.4.24",
