@@ -8,8 +8,8 @@ const siteMetadata = {
   theme: 'dark', // system, dark or light
   siteUrl: 'https://marekfs.github.io/blog',
   siteRepo: 'https://github.com/marekfs/blog',
-  siteLogo: '/blog/static/images/logo.png',
-  socialBanner: '/blog/static/images/twitter-card.png',
+  siteLogo: 'blog/static/images/logo.png',
+  socialBanner: 'blog/static/images/twitter-card.png',
   mastodon: 'https://mastodon.social/@mastodonuser',
   email: 'address@yoursite.com',
   github: 'https://github.com',
@@ -75,7 +75,7 @@ const siteMetadata = {
   search: {
     provider: 'kbar', // kbar or algolia
     kbarConfig: {
-      searchDocumentsPath: 'search.json', // path to load documents to search
+      searchDocumentsPath: 'blog/search.json', // path to load documents to search
     },
     // provider: 'algolia',
     // algoliaConfig: {
