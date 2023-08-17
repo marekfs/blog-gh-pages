@@ -8,5 +8,18 @@
       "@/css/*": ["css/*"],
       "contentlayer/generated": ["./.contentlayer/generated"]
     }
-  }
+  },
+  "exclude": [
+    "node_modules",
+    ".git",
+    ".contentlayer",
+    ".github",
+    ".yarn",
+    ".vscode",
+    ".husky",
+    "dist",
+    "dist*",
+    "**/dist/*",
+    "**/node_modules/*"
+  ]
 }
