@@ -13,7 +13,7 @@ import PostBanner from '@/layouts/PostBanner'
 import { Metadata } from 'next'
 import siteMetadata from '@/data/siteMetadata'
 
-const isProduction = process.env.NODE_ENV === 'production'
+const isDevelopment = process.env.NODE_ENV === 'development'
 const defaultLayout = 'PostLayout'
 const layouts = {
   PostSimple,
@@ -105,12 +105,12 @@ export default async function Page({ params }: { params: { slug: string[] } }) {
 
   return (
     <>
-      {isProduction && post && 'draft' in post && post.draft === true ? (
+      {!isDevelopment && post && 'draft' in post && post.draft === true ? (
         <div className="mt-24 text-center">
           <PageTitle>
-            Under Construction{' '}
-            <span role="img" aria-label="roadwork sign">
-              🚧
+            Still writing this post.{' '}
+            <span role="img" aria-label="pen">
+              🖋
             </span>
           </PageTitle>
         </div>
