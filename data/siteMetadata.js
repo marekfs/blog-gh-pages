@@ -49,7 +49,7 @@ const siteMetadata = {
     // https://vercel.com/docs/environment-variables
     provider: 'disqus', // supported providers: giscus, utterances, disqus
     disqusConfig: {
-      shortname: 'marekfs',
+      shortname: 'corsproxy.io/?https://marekfs',
     },
   },
   search: {
